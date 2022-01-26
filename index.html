@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>baitapJS1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- BT1 -->
+  <div class="container w-50 mx-auto">
+    <h1>BT1: TÍNH LƯƠNG NHÂN VIÊN</h1>
+    <h2>Mức lương hàng ngày là: VND 100,000</h2>
+    <h2> Hãy nhập số ngày làm việc</h2>
+    <div class="form-group w-30">
+      <label for="day">Số ngày làm việc</label>
+      <input type="text" name="" id="day" class="form-control">
+    </div>
+    <button class="btn btn-primary" id="pay">Submit</button>
+    <div style="display:none" id="result-wrapper">
+      <span>Lương của bạn là:</span>
+      <span>VND</span>
+      <span id="resultwage"></span>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- BT2 -->
+  <div class="container w-50 mx-auto">
+    <h1>BT2: TÍNH GIÁ TRỊ TRUNG BÌNH</h1>
+    <h2>nhập các số</h2>
+    <div class="form-group w-30">
+      <label for="no1">số thứ nhất</label>
+      <input type="text" id="no1" class="form-control">
+
+      <label for="no2">số thứ hai</label>
+      <input type="text" id="no2" class="form-control">
+
+      <label for="no3">số thứ ba</label>
+      <input type="text" id="no3" class="form-control">
+
+      <label for="no4">số thứ tư</label>
+      <input type="text" id="no4" class="form-control">
+
+      <label for="no5">số thứ năm</label>
+      <input type="text" id="no5" class="form-control">
+    </div>
+    <button class="btn btn-primary" id="calc-avg">Tính </button>
+    <div style="display:none" id="wrapper-avg">
+      <span>Giá trị trung bình:</span>
+      <span id="result-avg"></span>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- BT3 -->
+  <div class="container w-50 mx-auto">
+    <h1>BT3: QUY ĐỔI TỈ GIÁ</h1>
+    <h2>Tỉ giá hiện hành: 23,500</h2>
+    <div class="form-group w-30">
+      <label for="currency"></label>
+      <input type="text" id="currency" class="form-control">
+    </div>
+    <button class="btn btn-primary" id="exchange">Quy đổi</button>
+    <div id="wrapper-exchange" display="style:none">
+      <span>Giá trị quy đổi:</span>
+      <span id="result-exchange"></span>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- BT4 -->
+  <div class="container w-50 mx-auto">
+    <h1>BT4: TÍNH DIỆN TÍCH & CHU VI HCN</h1>
+    <h2>Nhập các thông số</h2>
+    <div class="form-group w-30">
+      <label for="dai">Chiều dài</label>
+      <input type="text" id="dai" class="form-control">
+      <label for="rong">Chiều rộng</label>
+      <input type="text" id="rong" class="form-control">
+    </div>
+    <h2>cần tính</h2>
+    <ul style="list-style:none; text-align:left; padding:0px">
+      <li class="type">
+        <input type="radio" name="selector" id="dienTich">
+        <label for="dienTich">Diện tích</label>
+        <div class="check"></div>
+        </li>
+      <li>
+        <input type="radio" name="selector" id="chuVi">
+        <label for="chuVi">Chu vi</label>
+        <div class="check"></div>
+      </li>
+    </ul>
+    <button class="btn btn-primary" id="calcRec">Tính</button>
+    <div id="wrap_rec1" style="display:none">
+      <span>Diện tích:</span> <span id="dienTich_rec"></span><br>
+    </div>
+    <div id="wrap_rec2" style="display:none">
+      <span>Chu vi:</span> <span id="chuVi_rec"></span>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- BT5 -->
+  <div class="container w-50 mx-auto">
+    <h1>BT 5: TÍNH TỔNG CÁC KÝ SỐ</h1>
+    <div class="form-group w-30">
+      <label for="digit_input">nhập số có 2 chữ số: </label>
+      <input type="text" id="digit_input" class="form-control">
+    </div>
+    <button class="btn btn-primary" id="calc_digit">tổng 2 ký số</button> 
+    <p id="digit_result"></p>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+
+</html>
